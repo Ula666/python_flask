@@ -24,7 +24,12 @@ if __name__ == "__main__":
 
 # create two more pages/ routes and add the functionality for email and password
 # implement oop inheritance
-@app.route("/password/")
-def home():
-    return render_template("index.html")
 
+
+@app.route("/email/")
+def get_email():
+    return render_template("email.html")
+
+@app.route("/password/")
+def page_2():
+    return render_template("password.html")
